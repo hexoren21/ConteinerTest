@@ -1,4 +1,4 @@
-version: "1.1"
+version: "1.2"
 
 
 
@@ -26,3 +26,5 @@ services:
     container_name: nginx
     volumes:
       - "./nginx/default.conf:/etc/nginx/conf.d/default.conf"
+    ports:
+      - "80:80"
